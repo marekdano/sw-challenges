@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-javascript-tests",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "execute": "babel-node ./index.js",
+    "test": "jest --watch"
+  },
+  "author": "Marek Dano",
+  "license": "",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
+  }
+}
