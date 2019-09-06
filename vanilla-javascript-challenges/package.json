@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "execute": "babel-node ./index.js",
-    "test": "jest --watch"
+    "test": "jest --watchAll"
   },
   "author": "Marek Dano",
   "license": "",
