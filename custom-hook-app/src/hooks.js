@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { getGifts } from './api.js';
 
 export const useFetchData = (initialUrl, initialData) => {
   const [data, setData] = useState(initialData);
@@ -14,7 +14,7 @@ export const useFetchData = (initialUrl, initialData) => {
       setIsLoading(true);
 
       try {
-        const result = await axios(url);
+        const result = await getGifts(url);
 
         if (mounted) setData(result.data)
       } catch (error) {
